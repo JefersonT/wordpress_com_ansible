@@ -1,0 +1,39 @@
+---
+- name: 'Baixar arquivo de instalacao do wordpress'
+  get_url:
+    url: 'https://br.wordpress.org/wordpress-5.0.16-pt_BR.tar.gz'
+    dest: '/tmp/wordpress.tar.gz'
+
+- name: 'Descompactar arquivo wordpress'
+  unarchive:
+    src: '/tmp/wordpress.tar.gz'
+    dest: '/var/www'
+    remote_src: yes
+  become: yes
+
+- name: 'Copiar arquivo de configuracao do wordpress'
+  copy:
+    src: "{{ wp_installation_dir }}/wp-config-sample.php"
+    dest: "{{ wp_installation_dir }}/wp-config.php"
+    remote_src: yes
+  become: yes
+
+- name: 'Alterar dados do arquivo de configuracao do wordpress'
+  replace:
+    path: "{{ wp_installation_dir }}/wp-config.php"
+    regexp: "{{ item.regex }}"
+    replace: "{{ item.value }}"
+  with_items:
+    - { regex: 'nome_do_banco_de_dados_aqui', value: "{{ wp_db_name }}"}
+    - { regex: 'nome_de_usuario_aqui', value: "{{ wp_username }}" }
+    - { regex: 'senha_aqui', value: '12345' }
+    - { regex: 'localhost', value: "{{ wp_db_ip }}"}
+  become: yes
+
+- name: 'Configurar o apache para servir o wordpress'
+  template:
+    src: "{{ DocumentRoot }}"
+    dest: '/etc/apache2/sites-available/000-default.conf'
+  become: yes
+  notify:
+    - restart apache

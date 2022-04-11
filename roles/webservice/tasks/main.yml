@@ -1,0 +1,13 @@
+---
+- name: 'Instala pacotes necessários para o sistema'
+  apt:
+    name:
+      - php5
+      - libapache2-mod-php5
+      - php5-gd
+      - apache2
+      - libssh2-php
+      - php5-mcrypt
+      - php5-mysql
+    state: latest
+  become: yes
