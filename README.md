@@ -32,7 +32,7 @@
   ```
 
  5. Instalar o VirtualBox
-  >Acesse o site da [VirtualBox](https://www.virtualbox.org/), faça o download para seu sistema operacional e instale seguindo as suas instruções.
+    >Acesse o site da [VirtualBox](https://www.virtualbox.org/), faça o download para seu sistema operacional e instale seguindo as suas instruções.
 
  6. Instalar um IDE ou editor de texto de sua Preferência;
 
