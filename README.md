@@ -10,30 +10,27 @@
 ## Passo-a-passo para executar e testar o projeto(Linux).
 ### Instalação dos pacotes necessário:
  1. Atualizar os Pacotes
-
-```
-  $ sudo apt-get update
-```
+ ```
+ $ sudo apt-get update
+ ```
 
  2. Instalar o Python
-
-```
-  $ sudo apt-get install python3
-```
+ ```
+ $ sudo apt-get install python3
+ ```
 
  3. Instalar o Ansible
-
-```
-  $ sudo apt-get install ansible
-```
+ ```
+ $ sudo apt-get install ansible
+ ```
 
  4. Instalar o Vagrant
 
-```
-  $ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-  $ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-  $ sudo apt-get update && sudo apt-get install vagrant
-```
+ ```
+ $ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+ $ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+ $ sudo apt-get update && sudo apt-get install vagrant
+ ```
 
  5. Instalar o VirtualBox
   >Acesse o site [VirtualBox](https://www.virtualbox.org/), faça o download para seu sistema operacional e instale seguindo as suas instruções.
