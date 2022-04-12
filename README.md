@@ -40,11 +40,15 @@
 ### Para executar o projeto:
  1. Baixe ou clone o repositório;
  2. Acesse a pasta do projeto baixado;
- 3. Abra o arquivo '*Vagrantfile*' e verifique se os IPs utilizados nas VMs do 'wordpress' e 'mysql' são compatíveis com o range de IPs disponíveis no VirtualBox;
+ 3. Abra o arquivo ***Vagrantfile*** e verifique se os IPs utilizados nas VMs do *wordpress* e *mysql* são compatíveis com o range de IPs disponíveis no VirtualBox;
    - Caso necessário altere-os conforme o disponível;
-   - Caso seja necessário alterar os IPs, deve altera-los nos arquivos <i>database.yml</i> e <i>wordpress.yml</i> no diretório <strong>group_vars</strong> e no arquivo <i>hosts</i> na raiz do projeto;
- - No diretório raiz execute o comando a seguir para subir as duas VMs:
-   - <code>vagrant up</code>
- - Ainda no diretório raiz execute o seguinte comando para provisionar (configurar) as VMs através do ansible:
-   - <code>ansible-playboock -i hosts provisioning.yml</code>
- - Ao finalizar o provisionamento acesso ao Ip da vm do wordpress a partir da máquina hosts;
+   - Também será necessário altera-los nos arquivos ***database.yml*** e ***wordpress.yml*** no diretório **group_vars** e no arquivo ***hosts*** no diretório raiz do projeto;
+ 4. No diretório raiz execute o comando a seguir para subir as duas VMs:
+  ```
+   $ vagrant up
+  ```
+ 5. Ainda no diretório raiz execute o seguinte comando para provisionar (configurar) as VMs através do ansible:
+  ```
+    ansible-playboock -i hosts provisioning.yml
+  ```
+ 6. Ao finalizar o provisionamento acesso ao IP da VM *wordpress* em um navegador a partir da máquina host;
