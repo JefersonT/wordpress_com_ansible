@@ -7,12 +7,22 @@
  - Ansible - Básico;
 
 
-## Passo-a-passo para executar e testar o projeto.
+## Passo-a-passo para executar e testar o projeto(Linux).
 ### Pre-requisitos:
- - Instalar o <i>Python</i>;
- - Instalar o <i>Ansible</i>;
- - Instalar o <i>Vagrant</i>;
- - Instalar o <i>VirtualBox</i>;
+<```
+
+$ sudo apt-get update
+
+$ sudo apt-get install python3
+
+$ sudo apt-get install ansible
+
+$ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+$ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+$ sudo apt-get update && sudo apt-get install vagrant
+
+```
+ - Acesse o site VirtualBox, faça o download para seu sistema operacional e instale seguindo as suas instruções.
  - Instalar um IDE ou editor de texto de sua Preferência;
  - Clonar o projeto em uma pasta local;
 
