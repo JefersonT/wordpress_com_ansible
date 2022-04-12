@@ -41,8 +41,8 @@
  1. Baixe ou clone o repositório;
  2. Acesse a pasta do projeto baixado;
  3. Abra o arquivo ***Vagrantfile*** e verifique se os IPs utilizados nas VMs do *wordpress* e *mysql* são compatíveis com o range de IPs disponíveis no VirtualBox;
-   - Caso necessário altere-os conforme o disponível;
-   - Também será necessário altera-los nos arquivos ***database.yml*** e ***wordpress.yml*** no diretório **group_vars** e no arquivo ***hosts*** no diretório raiz do projeto;
+  - Caso necessário altere-os conforme o disponível;
+  - Também será necessário altera-los nos arquivos ***database.yml*** e ***wordpress.yml*** no diretório **group_vars** e no arquivo ***hosts*** no diretório raiz do projeto;
  4. No diretório raiz execute o comando a seguir para subir as duas VMs:
   ```
    $ vagrant up
