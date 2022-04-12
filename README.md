@@ -38,10 +38,11 @@
 
 
 ### Para executar o projeto:
- - Acesse a pasta do projeto;
- - Abra o arquivo <i>Vagrantfile</i> e verifique se os ips utilizados nas VMs do wordpress e mysql são compatíveis com o range de Ips disponíveis no VirtualBox;
+ 1. Baixe ou clone o repositório;
+ 2. Acesse a pasta do projeto baixado;
+ 3. Abra o arquivo '*Vagrantfile*' e verifique se os IPs utilizados nas VMs do 'wordpress' e 'mysql' são compatíveis com o range de IPs disponíveis no VirtualBox;
    - Caso necessário altere-os conforme o disponível;
-   - Caso tenha sido necessário alterar os ips, deve altera-los nos arquivos <i>database.yml</i> e <i>wordpress.yml</i> no diretório <strong>group_vars</strong> e no arquivo <i>hosts</i> na raiz do projeto;
+   - Caso seja necessário alterar os IPs, deve altera-los nos arquivos <i>database.yml</i> e <i>wordpress.yml</i> no diretório <strong>group_vars</strong> e no arquivo <i>hosts</i> na raiz do projeto;
  - No diretório raiz execute o comando a seguir para subir as duas VMs:
    - <code>vagrant up</code>
  - Ainda no diretório raiz execute o seguinte comando para provisionar (configurar) as VMs através do ansible:
