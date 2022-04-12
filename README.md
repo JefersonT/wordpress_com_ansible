@@ -29,7 +29,7 @@ $ sudo apt-get update && sudo apt-get install vagrant
 
 ```
  5. Instalar o VirtualBox
- > Acesse o site [VirtualBox](https://www.virtualbox.org/), faça o download para seu sistema operacional e instale seguindo as suas instruções.
+  > Acesse o site [VirtualBox](https://www.virtualbox.org/), faça o download para seu sistema operacional e instale seguindo as suas instruções.
 
  6. Instalar um IDE ou editor de texto de sua Preferência;
 
