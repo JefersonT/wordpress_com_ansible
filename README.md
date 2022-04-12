@@ -9,8 +9,7 @@
 
 ## Passo-a-passo para executar e testar o projeto(Linux).
 ### Pre-requisitos:
-<```
-
+```
 $ sudo apt-get update
 
 $ sudo apt-get install python3
