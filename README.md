@@ -1,7 +1,7 @@
 # Criando serviço Wordpress com Ansible
 <p>Este projeto foi desenvolvido com o objetivo de por em prática os conhecimentos adquiridos nos Curso de Ansible: sua infraestrutura como código disponível na plataforma da Alura. Este projeto teve seu foco em criar e configurar um serviço de Wordpress com integração a banco de dados MySQL utilizando Vagrant para virtualização das máquinas e Ansible para automação das configurações dos serviços. Aqui pode ser observado uma estruturação básica dos diretórios e arquivos para uma boa prática na estruturação e organização de projetos com ansible.</p>
 
-# Pre-requisitos para Compreensão:
+## Pre-requisitos para Compreensão:
  - Linux (Terminal) - Básico;
  - Vagrant - Básico;
  - Ansible - Básico;
